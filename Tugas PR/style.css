@@ -1,0 +1,39 @@
+
+body {
+    padding: 2% 25%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.judul {
+    text-align: center;
+    
+}
+.box {
+    background-color: whitesmoke;
+    width: 650px;
+    height: 350px;
+    padding: 10px;
+}
+.Bold {
+    color: red;
+}
+.italic{
+    color: blue;
+}
+.quotes{
+    padding: 10px;
+}
+.small{
+    font-size: small;
+    margin: 10px 0px;
+}
+.larger{
+    font-size: larger;
+    margin: 10px 0px;
+}
+.muchlarger{
+    font-size: x-large;
+    margin: 10px 0px
+}
+.last{
+    text-align: right;
+}
