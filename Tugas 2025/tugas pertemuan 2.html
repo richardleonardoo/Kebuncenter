@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .soal1{
+        text-align: center;
+        background-color: white;
+        height: 100px;
+        width: 200px;
+        border: 2.5px black solid;
+        word-break: break-word;
+    }
+    .inline{
+        background-color: lightblue;
+        display: inline;
+        font-weight: 700;
+    }
+    .block{
+        background-color: lightgreen;
+        display: block;
+    }
+    .IB{
+        background-color: lightsalmon;
+        display: inline-block;
+    }
+    .blue{
+        background-color: lightblue;
+        padding: 10px;
+        width: fit-content;
+        display: inline;
+
+    }
+    .green{
+        display: inline;
+        padding: 10px;
+        width: fit-content;
+        background-color: lightgreen;
+
+    }
+    .red {
+        display: inline;
+        padding: 10px;
+        width: fit-content;
+        background-color:lightcoral;
+        text-transform: uppercase;
+        
+    }
+    .border{
+        width: fit-content;
+        padding: 30px;
+        outline: 2px black solid;
+        
+    }
+</style>
+<body>
+    <h1>Soal 1</h1>
+    <div class="soal1">
+        This is a paragraph inside a div. The padding affects the layout of the text inside the div.
+    </div>
+    <h1>Soal 2</h1>
+    <div class="inline">
+        Inline
+    </div>
+    <div class="block">
+        Block
+    </div>
+    <div class="IB">
+        Inline-Block
+    </div>
+    <h1>Soal 3</h1>
+    <div class="border"> 
+        <div class="blue"><b>Bold Arial Text</b></div> 
+        <div class="green"><i>Italic Times Text</i></div>
+        <div class="red">Upper Courier Text</div>
+    </div>
+
+</body>
+</html>
