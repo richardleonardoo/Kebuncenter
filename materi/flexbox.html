@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container {
+            background-color: rgb(22, 22, 22);
+            border-radius: 10px;
+            width: 450px;
+        }
+
+        .card-thumbnail  img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card-body {
+            display: flex;
+            align-items: center;
+            padding:5px;
+            gap:10px
+            
+        }
+        .card-profile-picture img{
+            width: 50px;
+            height: 50px;
+            border-radius: 1000px;
+            
+        }
+        .card-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .card-detail-title {
+            color: white;
+        }
+        .card-detail-statistic{
+            display: flex;
+            color: rgb(139, 139, 139);
+            gap: 5px;
+        }
+        .card-more-option{
+            color: white;
+            display: flex;
+            justify-content: end;
+            flex: 1;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+        .menu {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://placehold.co/50" alt="">
+
+        </div>
+        <div class="comp-name">
+            COMPANY NAME
+        </div>
+        <div class="menu">
+            <div class="">Home</div>
+            <div class="">Product</div>
+            <div class="">Search</div>
+            <div class="">Rating</div>
+        </div>
+    </nav>
+    <div class="card-container">
+        <div class="card-thumbnail">
+            <img src="https://placehold.co/600x400" alt="">
+        </div>
+        <div class="card-body">
+            <div class="card-profile-picture">
+                <img src="https://placehold.co/100x100" alt="">
+            </div>
+            <div class="card-detail">
+                <div class="card-detail-title">How is this laptop so light</div>
+                <div class="card-detail-statistic">
+                    <div class="card-detail-statisic-name">
+                        Dave2D
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                      </svg>
+                    <div class="card-detail-statisic-views">
+                        352K Views
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                      </svg>
+                    <div class="card-detail-statisic-time">
+                        8 days ago
+                    </div>
+                </div>
+            </div>
+            <div class="card-more-option">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                    <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                  </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
