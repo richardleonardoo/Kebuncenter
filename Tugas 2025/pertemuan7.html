@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mainconsole{
+        padding: 10px;
+        border: 2px solid black;
+        margin: 10px;
+    }
+    .mainconsole{
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "left uppermid right"
+                             "middownleft big big"
+                             "downleft big big"   ;
+    }
+    .mainconsole div {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;        
+        
+    }
+    
+    .a{
+        align-self: center;
+        grid-area: left;
+        background-color: blue;
+    }
+    .b{
+        grid-area: middownleft;
+        background-color: lightblue;
+    }
+    .c{
+        grid-area: downleft;
+        background-color: aqua;
+    }
+    .d{
+        grid-area: uppermid;
+        background-color:red ;
+    }
+    .e{
+        grid-area: right;
+        background-color: pink;
+    }
+    .f{
+        grid-area: big;
+        background-color: purple;
+    }
+</style>
+<body>
+    <div class="mainconsole">
+        <div class="a">left</div>
+        <div class="b">middownleft</div>
+        <div class="c">downleft</div>
+        <div class="d">uppermid</div>
+        <div class="e">right</div>
+        <div class="f">big</div>
+    </div>
+</body>
+</html>
