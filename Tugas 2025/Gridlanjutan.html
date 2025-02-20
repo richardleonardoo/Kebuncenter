@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mainconsole{
+        display: grid;
+        grid-template-areas: "thmb thmb thmb "
+                               "prfl tle tle"
+                               "prfl chnl vd";
+        height: fit-content;
+        gap: 10px;
+        width: 1000px;
+    }
+    .mainconsole{
+    background-color: darkgray;
+    padding: 30px 35px;
+    }
+    .Thmb{
+        grid-area:thmb;
+        background-color: gray;
+        height: 300px;
+        
+    }
+    .Prfl{
+        grid-area:prfl;
+        background-color: white;
+        width: 50px;
+        border-radius: 10000px;
+        height: 50px;
+        text-align: center;
+    }
+    .Tle{
+        grid-area:tle;
+        background-color: cadetblue;
+        width: fit-content;
+
+    }
+    .Chnl{
+        grid-area:chnl;
+        width: fit-content;
+    }
+    .Vd{
+        grid-area:vd;
+        width: fit-content;
+    }
+</style>
+<body>
+    <div class="mainconsole">
+        <div class="Thmb" id="tumb">Thumbnail</div>
+        <div class="Prfl">Profile</div>
+        <div class="Tle">Title</div>
+        <div class="Chnl">Channel</div>
+        <div class="Vd">Video detail</div>
+    </div>
+
+    <script>
+        document.getElementById("tumb").addEventListener("mouseenter", () => {
+            alert("HOVERED!")
+        })
+    </script>
+</body>
+</html>
