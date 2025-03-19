@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        .bento {
+            display: grid;
+            grid-template-areas: 
+            "bento-1 bento-2 bento-3"
+            "bento-4 bento-4 bento-3"
+            "bento-5 bento-6 bento-6";
+
+        }
+        .bento-1 {
+            grid-area: bento-1;
+        }
+        .bento-2 {
+            grid-area: bento-2;
+        }
+        .bento-3 {
+            grid-area: bento-3;
+        }
+        .bento-4 {
+            grid-area: bento-4;
+        }
+        .bento-5 {
+            grid-area: bento-5;
+        }
+        .bento-6 {
+            grid-area: bento-6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bento flex gap-10 flex-col w-screen  ">
+        <div class="bento-1 bg-blue-200 p-3 w-full h-full ">
+            <h1> 1. Lorem ipsum Dolar</h1>
+            Lorem ipsum dolor sit amet. consetetur adipisicing elit. Neque hid iusto tenetur, distincto alias iste expedita ullam unde dolores aliquied, ipsa laudantium rerum deleniti, tempora enim dolore? ab, neque ratione?
+        </div>
+            
+        <div class="bento-2 bg-blue-200 p-3 w-full h-full">
+            <h1>2. Distinctio alias</h1>
+            Neque hid iusto tenetur, distincto alias iste expedita ullam unde dolores aliquied, ipsa laudantium rerum deleniti, tempora enim dolore? ab, neque ratione?
+        </div>
+
+        <div class="bento-3 bg-blue-200 p-3 w-full h-full ">
+            <h1>3. Ullam unde dolores aliquid</h1>
+            Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. 
+        </div>
+
+        <div class="bento-4 bg-blue-200 p-3 w-full h-full">
+            <h1>4. Laudantium rerum deleniti</h1>
+            Lorem ipsum dolor sit amet. consetetur adipisicing elit. Neque hid iusto tenetur, distincto alias iste expedita ullam unde dolores aliquied, ipsa laudantium rerum deleniti, tempora enim dolore? ab, neque ratione?
+
+        </div>
+        <div class="bento-5 bg-blue-200 p-3 w-full h-full">
+            <h1>5. Facere aut porro</h1>
+            Lorem ipsum dolor sit amet. consetetur adipisicing elit. Neque hid iusto tenetur, distincto alias iste expedita ullam unde dolores aliquied, ipsa laudantium rerum deleniti, tempora enim dolore? ab, neque ratione?
+
+        </div>
+        <div class="bento-6 bg-blue-200 p-3 w-full h-full">
+            <h1>6. Consectur</h1>
+            Lorem ipsum dolor sit amet. consetetur adipisicing elit. Neque hid iusto tenetur, distincto alias iste expedita ullam unde dolores aliquied, ipsa laudantium rerum deleniti, tempora enim dolore? ab, neque ratione?
+
+        </div>
+        
+    </div>
+</body>
+</html>
