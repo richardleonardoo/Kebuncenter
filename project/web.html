@@ -5,7 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .fridge{
+        display: grid;
+        grid-template-areas:
+                            "g1 g2"
+                            "g3 g4"
+                            "t1 t1 " ;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .gambar1{grid-area:g1 ; }     
+    .gambar2{grid-area:g2 ; }
+    .gambar3{grid-area:g3 ; }
+    .gambar4{grid-area:g4 ; }
+    .text{grid-area:t1 ;}
+</style>
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 <body>
     <div class="flex gap-5 w-screen ">
         <div>Samsung</div>
@@ -41,12 +59,15 @@
                 <div>Our Recommendations</div>
             </div>
         </div>
-        <div>
-            <div><img src="https://images.samsung.com/is/image/samsung/my-side-by-side-rs62t5f01b4-rs62t5f01b4-me-frontblack-259936362?$684_547_PNG$    " alt=""></div>
-            <div><img src="https://image-us.samsung.com/SamsungUS/home/home-appliances/refrigerators/4-door-flex/pd/rf28m9580sg-aa/gallery/031918/RF28M9580SG-AA_001_Front_Black.jpg?$product-details-jpg$" alt=""></div>
-            <div><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
-            <div></div>
-            <div></div>
+        <div class="fridge">
+            <div class="gambar1"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+            <div class="gambar2"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+            <div class="gambar3"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div class="">
+            <div class="gambar4"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div class="">
+            <div class="text">
+                <h1>New spoke Ai </h1>
+                <div>Dapatkan hadiah senilai hingga Rp.10.9 juta dan hadiah menarik lainnya </div>
+            </div>
         </div>
         <div>
             <div></div>
