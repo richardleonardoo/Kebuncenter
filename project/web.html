@@ -12,15 +12,26 @@
                             "g1 g2"
                             "g3 g4"
                             "t1 t1 " ;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        width: 50% ;
     }
     .gambar1{grid-area:g1 ; }     
     .gambar2{grid-area:g2 ; }
     .gambar3{grid-area:g3 ; }
     .gambar4{grid-area:g4 ; }
     .text{grid-area:t1 ;}
+
+    .SecondFridge{
+        display: grid;
+        grid-template-areas: 
+                            "V1 G1"
+                            "W1 T1";
+        width: 50% ;
+    }
+
+    .Voucher{grid-area:V1 ;}
+    .Galaxy{grid-area:G1 ;}
+    .WashingMachine{grid-area:W1 ;}
+    .TV{grid-area:T1;}
 </style>
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
@@ -59,21 +70,37 @@
                 <div>Our Recommendations</div>
             </div>
         </div>
-        <div class="fridge">
-            <div class="gambar1"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
-            <div class="gambar2"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
-            <div class="gambar3"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div class="">
-            <div class="gambar4"><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div class="">
-            <div class="text">
-                <h1>New spoke Ai </h1>
-                <div>Dapatkan hadiah senilai hingga Rp.10.9 juta dan hadiah menarik lainnya </div>
+        <div class="flex ">
+            <div class="fridge flex justify-items-center bg-gray-300  rounded-xl m-5  ">
+                <div class="gambar1 "><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+                <div class="gambar2 "><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+                <div class="gambar3 "><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div class="">
+                <div class="gambar4 "><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div class="">
+                <div class="text flex flex-col  justify-center p-10  ">
+                    <h1 class="flex justify-center ">New spoke Ai </h1>
+                    <div class="flex justify-center ">Dapatkan hadiah senilai hingga Rp.10.9 juta dan hadiah menarik lainnya </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="SecondFridge">
+                <div class="Voucher">
+                    <div>Baru</div>
+                    <div><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+                    <div>Voucher Monitor Odyssey Potongan hingga Rp 1 Juta</div>
+                </div>
+                <div class="Galaxy">
+                    <div>Baru</div>
+                    <div><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+                    <div>Galaxy A56 5G Gratis Memory Upgrade</div>
+                </div>
+                <div class="WashingMachine">
+                    <div><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+                    <div>Bespoke Ai Combo Gratis S24 FE & Diptyque Parfum</div>
+                </div>
+                <div class="TV">
+                    <div><img src="https://images.samsung.com/is/image/samsung/p6pim/nz/rf65dg9hc3b1sa/gallery/nz-t-style-french-door-215inch-family-hub-rf65dg9hc3b1sa-thumb-542074461" alt=""></div>
+                    <div>The New Era of Samsung Ai TV</div>
+                </div>
+            </div>
         </div>
     </div>
     <div></div>
